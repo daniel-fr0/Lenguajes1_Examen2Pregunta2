@@ -25,6 +25,9 @@ class Prefix():
 		self.infix = stack.pop()
 		self.value = eval(self.infix.replace("/", "//"))
 
+		if len(stack) > 0:
+			raise Exception("Expresión inválida")
+
 	def __str__(self):
 		return f"(pre): {self.expr}"
 

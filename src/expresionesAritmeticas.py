@@ -4,7 +4,7 @@ from .Prefix import Prefix
 
 def main():
 	print("-------------------------------------------------------------------------------------------------------")
-	print("Bienvenido al programa de evaluacion de expresiones aritméticas")
+	print("Bienvenido al programa de expresiones aritméticas prefijas y postfijas")
 	print("\nIMPORTANTE: Las expresiones deben estar separadas por espacios, ")
 	print("solo se aceptan numeros enteros y las operaciones +, -, * y /\n")
 	print("Comandos disponibles:")

@@ -27,5 +27,9 @@ class TestPostfix(unittest.TestCase):
 	def testMostrarComplex3(self):
 		self.assertEqual(Postfix("3 2 + 4 * 10 3 + 2 / 5 - -").infix, "(3 + 2) * 4 - ((10 + 3) / 2 - 5)")
 
+	def testInvalidExpression(self):
+		with self.assertRaises(Exception):
+			Postfix("1 2 + +")
+
 if __name__ == '__main__':
 	unittest.main()
