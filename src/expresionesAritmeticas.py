@@ -5,6 +5,8 @@ from .Prefix import Prefix
 def main():
 	print("-------------------------------------------------------------------------------------------------------")
 	print("Bienvenido al programa de evaluacion de expresiones aritméticas")
+	print("\nIMPORTANTE: Las expresiones deben estar separadas por espacios, ")
+	print("solo se aceptan numeros enteros y las operaciones +, -, * y /\n")
 	print("Comandos disponibles:")
 	print("EVAL <orden> <expresión> - Evalúa la expresión del orden indicado (POST o PRE)")
 	print("MOSTRAR <orden> <expresión> - Muestra la expresión del orden indicado (POST o PRE) con notacion infija")
