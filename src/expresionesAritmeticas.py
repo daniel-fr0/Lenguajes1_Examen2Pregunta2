@@ -1,5 +1,5 @@
-from Postfix import Postfix
-from Prefix import Prefix
+from .Postfix import Postfix
+from .Prefix import Prefix
 
 
 def main():

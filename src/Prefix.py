@@ -12,13 +12,13 @@ class Prefix():
 				a = stack.pop()
 				b = stack.pop()
 
-				# Si son mas de dos terminos y no van a ser sumados son parentizados
-				if i != "+" and (len(a.split(" ")) > 1 or len(b.split(" ")) > 1):
-					if len(a.split("+")) > 1 or len(a.split("-")) > 1:
-						a = f"({a})"
+				# Si son mas de dos terminos que se van a multiplicar o dividir, se ponen entre parentesis
+				if i in "*/" and (len(a.split("+")) > 1 or len(a.split("-")) > 1):
+					a = f"({a})"
 
-					if len(b.split("+")) > 1 or len(b.split("-")) > 1:
-						b = f"({b})"
+				# Tambien si se restan dos o mas terminos, se ponen entre parentesis
+				if i in "*/-" and (len(b.split("-")) > 1 or len(b.split("+")) > 1):
+					b = f"({b})"
 
 				stack.append(f"{a} {i} {b}")
 
